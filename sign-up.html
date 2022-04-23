@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup-stylesheet.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <section class="sidebar">
+        <!-- <img id="background" src="images/bg-image.jpg" alt="background image with ferns and greenry for sidebar"> -->
+        <article class="banner">
+            <img id="logo" src="images/logo_white.png" alt="logo of the odin project">
+            <div></div>
+        </article>
+        <article class="credit">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            <div></div>
+        </article>
+    </section>
+    <section class="form-area">
+        <header class="description">
+            <p>
+                Your Lifetime Basket of Hassle-free Fruit and Vegetable needs are one click away.
+            </p>
+            <p>This is a one-time process to get you registered with us.</p>
+        </header>
+        <main>
+            <form action="/" method="post">
+                <h2>Let's Do This!</h2>
+                <div class="input-area">
+                    <div class="inputs">
+                        <label for="firstname">FIRST NAME *</label>
+                        <br>
+                        <input type="text" id="firstname" placeholder="Arati" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="lastname">LAST NAME *</label>
+                        <br>
+                        <input type="text" id="lastname" placeholder="Khandave" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="emailid">EMAIL</label>
+                        <br>
+                        <input type="email" id="emailid" placeholder="Optional">
+                    </div>
+                    <div class="inputs">
+                        <label for="mobile">PHONE NUMBER *</label>
+                        <br>
+                        <input type="tel" id="mobile" placeholder="EX: 1234567890" minlength="10" maxlength="10" required>
+                    </div>
+                    <div>
+                        <label for="address">Address *</label>
+                        <br>
+                        <textarea id="address" cols="90" required></textarea>
+                    </div>
+                </div>
+                <footer>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a class="LogIn" href="/">Log in</a></p>            
+                </footer>
+            </form>
+        </main>
+    </section>
+</body>
+</html>

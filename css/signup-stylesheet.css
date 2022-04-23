@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Odin;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: plum;
+}
+a:hover{
+    color: brown;
+}
+.LogIn:link{
+    color: #596D48;
+}
+input:focus{
+    border: 2px solid #8e6ed5;
+    outline: none;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 3px;
+}
+html, body{
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow:hidden; /*IMPORTANT*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body {
+    box-sizing: border-box;
+    /* border: solid red 1px; */
+}
+p{
+    margin: 0px;
+}
+.sidebar {
+    /* width: fit-content; to make parent element take child element's (background image's) width */
+    width: 34vw;
+    height: inherit;
+    position:relative;
+    background: url(../images/bg-image.jpg) no-repeat;
+    /* border: solid red 2px; */
+}
+#background {
+    max-width: 550px;
+    height: inherit;
+}
+.banner {
+    width: 520px;
+    height: 150px ;
+    position: absolute;
+    z-index: 1;
+    top: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner > div {
+    width: 520px;
+    height: 150px ;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+.banner > p {
+    color: aliceblue;
+    /* display: inline; */
+    font-size: 100px;
+    font-family: Odin, sans-serif;
+}
+#logo{
+    width: 100%;
+    height: auto;
+}
+.credit {
+    width: 520px;
+    height: 50px ;
+    position: absolute;
+    z-index: 1;
+    top: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.credit > div {
+    width: 520px;
+    height: 50px ;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    display: inline;
+}
+.credit > p {
+    color: aliceblue;
+    font-family: sans-serif;
+    display: inline;
+}
+.form-area{
+    height: inherit;
+    width: 66vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    background-color: #f9fafb;
+    gap: 30px;
+}
+.form-area > main{
+    background-color: #ffffff;
+    
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+label{
+    font-size: 15px;
+    font-weight: lighter;
+}
+form > h2 {
+    flex-basis: 100%;
+    padding-left: 30px;
+}
+.inputs {
+    flex-basis: 45%; /*Important*/
+}
+.input-area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0px 3px 5px 0.5px lightgray; /*Trick is to use y-axis offset value just a little lesser than blur redius*/
+}
+header, footer{
+    padding-left: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+header {
+    align-items: flex-end;
+    font-size: 20px;
+    font-weight: 800;
+    /* padding-left: 30px; */
+}
+footer {
+    align-items: flex-start;
+    padding-top: 30px;
+    /* padding-left: 30px; */
+    gap:20px;
+}
+footer>p{
+    flex-basis: 100%;
+}
+button{
+    background-color: #596D48;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px gray;
+    color: #ffffff;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.LogIn{
+    font-weight: bold;
+}
